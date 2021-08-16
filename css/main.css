@@ -87,6 +87,70 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   header,
+   footer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+
+   header .content-wrapper,
+   header nav ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   header nav {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+   }
+
+   main .hero-area {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   aside {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .features,
+   .features .features-items {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .reviews {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   footer .social-icons,
+   footer p {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   footer .contact {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
