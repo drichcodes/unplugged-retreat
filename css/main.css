@@ -100,12 +100,14 @@ textarea {
      display: flex;
      justify-content: center;
      align-items: center;
+     flex-flow: row wrap;
    }
 
    header nav {
      display: flex;
      justify-content: space-around;
      align-items: center;
+     flex-flow: row wrap;
    }
 
    main .hero-area {
@@ -118,6 +120,7 @@ textarea {
      display: flex;
      justify-content: center;
      align-items: center;
+     flex-flow: row wrap;
    }
 
    .features,
@@ -125,12 +128,14 @@ textarea {
      display: flex;
      justify-content: center;
      align-items: center;
+     flex-flow: row wrap;
    }
 
    .reviews {
      display: flex;
      justify-content: center;
      align-items: center;
+     flex-flow: row wrap;
    }
 
    footer .social-icons,
