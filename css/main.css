@@ -95,6 +95,10 @@ textarea {
      flex-flow: row wrap;
    }
 
+   header .content-wrapper {
+     width: 50%;
+   }
+
    header .content-wrapper,
    header nav ul {
      display: flex;
@@ -108,6 +112,7 @@ textarea {
      justify-content: space-around;
      align-items: center;
      flex-flow: row wrap;
+     width: 60%;
    }
 
    main .hero-area {
@@ -149,6 +154,10 @@ textarea {
      display: flex;
      justify-content: center;
      align-items: center;
+   }
+
+   footer .content-wrapper {
+     width: 55%;
    }
 
 
