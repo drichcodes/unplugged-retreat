@@ -99,12 +99,17 @@ textarea {
      width: 50%;
    }
 
+   header .header-divider {
+     width: 100%;
+   }
+
    header .content-wrapper,
    header nav ul {
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     width: 90%;
    }
 
    header nav {
