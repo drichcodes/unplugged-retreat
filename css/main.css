@@ -92,94 +92,70 @@ textarea {
      box-sizing: border-box;
      padding: 0;
    }
-   .content-wrapper {
-     padding: 0 20px;
+
+   /***** Global Styles *****/
+
+   html {
+     font-size: 16px;
+     padding: 0 1.5rem;
    }
 
-   header,
-   footer {
+   .content-wrapper {
      display: flex;
      justify-content: center;
      align-items: center;
-     flex-flow: row wrap;
-     padding: 20px 0;
+     flex-flow: column nowrap;
    }
 
+   /*** Header Styles ***/
+
    header .content-wrapper {
-     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column wrap;
    }
 
    header .header-divider {
      width: 100%;
    }
 
-   header .content-wrapper,
-   header nav ul {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
-     width: 90%;
-   }
-
    header nav {
      display: flex;
-     justify-content: space-around;
+     justify-content: center;
      align-items: center;
-     flex-flow: row wrap;
-     width: 60%;
    }
 
-   main .hero-area {
+   header nav ul{
+     display: inline-flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   header nav ul li {
      display: flex;
      justify-content: center;
      align-items: center;
    }
 
-   aside {
+   header nav ul li a {
+     padding: 0 20px;
+   }
+
+   /*** Aside Styles ***/
+
+   aside .form {
      display: flex;
-     justify-content: center;
+     justify-content: flex-start;
      align-items: center;
-     flex-flow: row wrap;
+     flex-flow: column wrap;
    }
 
-   .features,
-   .features .features-items {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
+   aside input {
+     width: 100%;
+     padding: .5rem;
+     margin: .5rem;
    }
-
-   .reviews {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
-   }
-
-   footer .social-icons,
-   footer p {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-
-   footer .contact {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-
-   footer .content-wrapper {
-     width: 55%;
-   }
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -268,15 +244,20 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*** Tablet Styles HERE ***/
+  header .content-wrapper {
+    width: 90%;
+  }
+
+  header nav ul {
+
+  }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+  /*** Desktop Styles HERE ***/
 }
 
 /* ==========================================================================
