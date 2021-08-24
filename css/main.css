@@ -164,6 +164,38 @@ textarea {
      text-align: center;
      width: 65%;
    }
+
+   /*** Reviews Styles ***/
+   .reviews .content-wrapper {
+     flex-flow: row wrap;
+     justify-content: flex-start;
+   }
+
+   /*** Footer Styles ***/
+   footer .footer-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column nowrap;
+   }
+
+   address {
+     text-align: center;
+   }
+
+   .social-icons h4 {
+     text-align: center;
+   }
+
+   footer ul {
+     display: inline-flex;
+   }
+
+   footer ul li {
+     list-style: none;
+     margin: 0 5px;
+   }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
