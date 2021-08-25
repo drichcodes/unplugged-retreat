@@ -105,7 +105,6 @@ textarea {
 
    html {
      font-size: 16px;
-     padding: 0;
      color: var(--clr-font-100);
    }
 
@@ -180,7 +179,9 @@ textarea {
 
    main h1 {
      margin: 1rem;
-     font-size: 2.5rem;
+     font-size: clamp(2rem, 6vw ,4rem);
+     max-width: 80%;
+     align-self: flex-start;
    }
 
    /*** Aside Styles ***/
@@ -369,14 +370,26 @@ textarea {
 
 @media only screen and (min-width: 768px) {
   /*** Tablet Styles HERE ***/
+  /* Header Styles */
   header .content-wrapper {
-    width: 90%;
+    flex-flow: row;
+    font-size: 2rem;
   }
 
-  header nav ul {
-
+  header img {
+    width: 100%;
   }
 
+  /* Hero Styles */
+  main h1 {
+    max-width: 60%;
+  }
+
+
+
+  /* Reviews Styles */
+  .reviews .content-wrapper {
+  }
 }
 
 @media only screen and (min-width: 1200px) {
