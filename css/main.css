@@ -105,7 +105,8 @@ textarea {
 
    html {
      font-size: 16px;
-     padding: 0 1.5rem;
+     padding: 0;
+     color: var(--clr-font-100);
    }
 
    .content-wrapper {
@@ -113,6 +114,8 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: column nowrap;
+     margin: 0;
+     padding: 0 1rem;
    }
 
    /*** Header Styles ***/
@@ -122,6 +125,18 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: column wrap;
+     width: 100%;
+     background-color: var(--clr-main-bg);
+     margin: 0;
+   }
+
+   header #logo-container {
+     display: flex;
+     justify-content: center;
+   }
+
+   header img {
+     width: 60%;
    }
 
    header .header-divider {
@@ -148,9 +163,31 @@ textarea {
 
    header nav ul li a {
      padding: 0 20px;
+     text-transform: uppercase;
+     font-size: 1.125rem;
+     color: var(--clr-font-100);
+     text-decoration: none;
+   }
+
+   /*** Hero Image ***/
+   .hero-area .content-wrapper {
+     background-image: url("../img/hero.jpg");
+     background-size: cover;
+     height: 88vh;
+     background-position: center;
+     justify-content: flex-start;
+   }
+
+   main h1 {
+     margin: 1rem;
+     font-size: 2.5rem;
    }
 
    /*** Aside Styles ***/
+
+   aside .content-wrapper {
+     background-color: var(--clr-secondary-bg);
+   }
 
    aside .form {
      display: flex;
@@ -167,6 +204,11 @@ textarea {
    }
 
    /*** Features Styles ***/
+
+   .features .content-wrapper {
+     background-image: url("../img/icons-bg.jpg");
+   }
+
    .features .features-items {
      display: flex;
      justify-content: center;
@@ -179,6 +221,7 @@ textarea {
    .reviews .content-wrapper {
      flex-flow: row wrap;
      justify-content: flex-start;
+     background-color: var(--clr-tertiary-bg-btn);
    }
 
    .reviews img {
@@ -187,6 +230,10 @@ textarea {
    }
 
    /*** Footer Styles ***/
+
+   footer {
+     background-color: var(--clr-main-bg);
+   }
    footer .footer-content {
      display: flex;
      justify-content: center;
