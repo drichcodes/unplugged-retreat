@@ -194,13 +194,20 @@ textarea {
      justify-content: flex-start;
      align-items: left;
      flex-flow: column wrap;
+     padding-bottom: 2em;
    }
 
    aside input {
      width: 100%;
      margin: .5rem 0;
-     padding: .5em;
+     padding: .75em;
      text-transform: uppercase;
+   }
+
+   aside #dl-Btn {
+     background-color: var(--clr-tertiary-bg-btn);
+     border: none;
+     color: var(--clr-font-100);
    }
 
    /*** Features Styles ***/
@@ -211,10 +218,16 @@ textarea {
 
    .features .features-items {
      display: flex;
+     flex-flow: column wrap;
      justify-content: center;
      align-items: center;
      text-align: center;
      width: 65%;
+   }
+
+   .fontawesome-icon {
+     font-size: 3em;
+     margin: 0;
    }
 
    /*** Reviews Styles ***/
