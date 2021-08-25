@@ -181,6 +181,11 @@ textarea {
      justify-content: flex-start;
    }
 
+   .reviews img {
+     background-size: cover;
+     width: 100%;
+   }
+
    /*** Footer Styles ***/
    footer .footer-content {
      display: flex;
