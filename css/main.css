@@ -443,6 +443,41 @@ textarea {
   /* Reviews Styles */
   .reviews .content-wrapper {
   }
+
+  .reviews .img-container, .review-text-container {
+    width: 46%;
+    margin: .5em;
+  }
+
+  .reviews h4 {
+    margin-bottom: auto;
+  }
+
+  /* Footer Styles */
+  footer .content-wrapper {
+
+  }
+
+  footer .footer-content {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  footer .contact, .social {
+    width: 50%;
+  }
+
+  footer address {
+    text-transform: none;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
