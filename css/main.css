@@ -173,14 +173,14 @@ textarea {
    .hero-area .content-wrapper {
      background-image: url("../img/hero.jpg");
      background-size: cover;
-     height: 88vh;
+     height: 50vh;
      background-position: center;
      justify-content: flex-start;
    }
 
    main h1 {
      margin: 1rem;
-     font-size: clamp(2rem, 6vw ,4rem);
+     font-size: 2rem;
      max-width: 80%;
      align-self: flex-start;
    }
@@ -213,7 +213,7 @@ textarea {
    }
 
    aside h3 {
-     font-size: 2rem;
+     font-size: 1.5rem;
    }
 
    /*** Features Styles ***/
@@ -239,7 +239,7 @@ textarea {
 
    .features h2 {
      max-width: 80%;
-     font-size: clamp(1.75rem, 2vw, 3rem);
+     font-size: 1.75rem;
      margin: 0;
    }
 
@@ -256,7 +256,9 @@ textarea {
    }
 
    .reviews h3 {
-     font-size: 2rem;
+     font-size: 1.5rem;
+     width: 100%;
+     text-align: center;
    }
 
    .reviews h4 {
@@ -305,6 +307,7 @@ textarea {
 
    .copyright {
      text-align: center;
+     padding: 1em;
    }
 
 /* ==========================================================================
@@ -408,11 +411,8 @@ textarea {
   }
 
   /* Hero Styles */
-  .hero-area .content-wrapper {
-    height: 51vh;
-  }
-
   main h1 {
+    font-size: 3rem;
     max-width: 60%;
   }
 
@@ -441,12 +441,17 @@ textarea {
   }
 
   /* Reviews Styles */
-  .reviews .content-wrapper {
-  }
 
   .reviews .img-container, .review-text-container {
     width: 46%;
-    margin: .5em;
+    margin: auto;
+    overflow: visible;
+  }
+
+  .review-text-container h4,
+  .review-text-container p {
+    max-width: 80%;
+    align-items: flex-start;
   }
 
   .reviews h4 {
@@ -454,9 +459,6 @@ textarea {
   }
 
   /* Footer Styles */
-  footer .content-wrapper {
-
-  }
 
   footer .footer-content {
     width: 100%;
@@ -466,10 +468,6 @@ textarea {
 
   footer .contact, .social {
     width: 50%;
-  }
-
-  footer address {
-    text-transform: none;
   }
 
   footer .social-icons {
@@ -482,6 +480,24 @@ textarea {
 
 @media only screen and (min-width: 1200px) {
   /*** Desktop Styles HERE ***/
+  .content-wrapper {
+    padding: 1em 3em;
+  }
+  /* Features Styles */
+
+  .features h2 {
+    width: 100%;
+    margin: 2em 0;
+  }
+
+  .features .features-items {
+    width: 30%;
+  }
+
+  /* Reviews Styles */
+  .reviews .img-container {
+    margin-bottom: 2em;
+  }
 }
 
 /* ==========================================================================
