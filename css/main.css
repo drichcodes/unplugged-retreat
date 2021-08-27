@@ -106,6 +106,7 @@ textarea {
    html {
      font-size: 16px;
      color: var(--clr-font-100);
+     font-family: 'Noto Sans JP', sans-serif;
    }
 
    .content-wrapper {
@@ -211,10 +212,15 @@ textarea {
      color: var(--clr-font-100);
    }
 
+   aside h3 {
+     font-size: 2rem;
+   }
+
    /*** Features Styles ***/
 
    .features .content-wrapper {
      background-image: url("../img/icons-bg.jpg");
+     padding: 2rem 0;
    }
 
    .features .features-items {
@@ -231,6 +237,12 @@ textarea {
      margin: 0;
    }
 
+   .features h2 {
+     max-width: 80%;
+     font-size: clamp(1.75rem, 2vw, 3rem);
+     margin: 0;
+   }
+
    /*** Reviews Styles ***/
    .reviews .content-wrapper {
      flex-flow: row wrap;
@@ -241,6 +253,14 @@ textarea {
    .reviews img {
      background-size: cover;
      width: 100%;
+   }
+
+   .reviews h3 {
+     font-size: 2rem;
+   }
+
+   .reviews h4 {
+     font-size: 1.75rem;
    }
 
    /*** Footer Styles ***/
@@ -269,7 +289,14 @@ textarea {
 
    footer ul li {
      list-style: none;
-     margin: 0 5px;
+     margin: 0 15px;
+   }
+   footer ul li a i {
+     color: var(--clr-secondary-bg);
+   }
+
+   footer h4 {
+     font-size: 1.5rem;
    }
 
    .social-icons .fab {
@@ -381,11 +408,37 @@ textarea {
   }
 
   /* Hero Styles */
+  .hero-area .content-wrapper {
+    height: 51vh;
+  }
+
   main h1 {
     max-width: 60%;
   }
 
+  /* Aside Styles */
+  aside .form-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
 
+  aside .form-description, .form {
+    width: 40%;
+  }
+
+  /* Features Styles */
+  .features .content-wrapper {
+    flex-flow: row wrap;
+  }
+
+  .features .features-items {
+    max-width: 50%;
+  }
+
+  .features-item-description {
+    max-width: 50%;
+  }
 
   /* Reviews Styles */
   .reviews .content-wrapper {
