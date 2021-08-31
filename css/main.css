@@ -310,6 +310,31 @@ textarea {
      padding: 1em;
    }
 
+   /***** FAQ Styles *****/
+   main .content-wrapper {
+     background-color: var(--clr-secondary-bg);
+   }
+
+   /***** ABOUT Styles *****/
+
+   .iframe-content figure {
+     position: relative;
+     padding-bottom: 125%;
+     overflow: hidden;
+   }
+
+   .iframe-content iframe {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+   }
+
+   .content-wrapper .general-info {
+     text-align: left;
+   }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
