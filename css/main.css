@@ -519,6 +519,18 @@ textarea {
     align-items: center;
     flex-direction: column;
   }
+  /***** FAQ Page Styles *****/
+  .faq-content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+
+  .faq-content {
+    max-width: 45%;
+    margin: 1em;
+  }
 
   /***** About Page Styles *****/
   .iframe-content {
