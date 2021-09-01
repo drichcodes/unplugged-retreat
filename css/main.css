@@ -317,10 +317,12 @@ textarea {
 
    /***** ABOUT Styles *****/
 
-   .iframe-content figure {
+   .iframe-content {
      position: relative;
      padding-bottom: 125%;
+     height: 0;
      overflow: hidden;
+     max-width: 100%;
    }
 
    .iframe-content iframe {
@@ -425,6 +427,10 @@ textarea {
 
 @media only screen and (min-width: 768px) {
   /*** Tablet Styles HERE ***/
+  .content-wrapper {
+    padding: 0 1em;
+  }
+
   /* Header Styles */
   header .content-wrapper {
     flex-flow: row;
@@ -435,9 +441,21 @@ textarea {
     width: 100%;
   }
 
+  .header-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    padding-bottom: 1em;
+  }
+
+  .header-text p {
+    max-width: 50%;
+  }
+
   /* Hero Styles */
   main h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     max-width: 60%;
   }
 
@@ -500,6 +518,22 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  /***** About Page Styles *****/
+  .iframe-content {
+    padding-bottom: 56.25%;
+  }
+
+  .general-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  .general-info .half-width {
+    max-width: 50%;
   }
 }
 
